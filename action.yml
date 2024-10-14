@@ -96,8 +96,6 @@ runs:
       run: |
         pip install --upgrade pip
         pip install buildozer cython==0.29.33
-        pip install appdirs
-        pip install packaging
         
 
     # Build with Buildozer

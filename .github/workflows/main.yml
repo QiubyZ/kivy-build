@@ -29,6 +29,12 @@ jobs:
       - name: work space
         run: echo ${{ github.workspace }}
 
+      - name: Hapus Rilis Lama
+        uses: dev-drprasad/delete-older-releases@v0.1.0
+        with:
+          keep_latest: 0 # Hapus semua rilis sebelumnya
+          delete_tags: true # Hapus tag yang terkait dengan rilis
+
 
       - name: Buat Rilis Baru
         uses: softprops/action-gh-release@v2
@@ -41,10 +47,4 @@ jobs:
           prerelease: false
           generate_release_notes: false 
 
-      # - name: Hapus Rilis Lama
-      #   uses: dev-drprasad/delete-older-releases@v0.1.0
-      #   with:
-      #     keep_latest: 0 # Hapus semua rilis sebelumnya
-      #     delete_tags: true # Hapus tag yang terkait dengan rilis
-      #
 
