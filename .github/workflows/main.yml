@@ -19,13 +19,17 @@ jobs:
       - name: Check 
         run: ls -l -a 
 
-      - uses: actions/checkout@v4
+
+      - name: work space
+        run: echo ${{ github.workspace }}
+
+
       - name: Buat Rilis Baru
         uses: softprops/action-gh-release@v2
         with:
           tag_name: v1
           name: v1 #Test Release
-          files: kivy-build.zip
+          files: ${{ github.workspace }}/kivy-build.zip  
           draft: false
           prerelease: false
           generate_release_notes: false 
