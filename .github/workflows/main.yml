@@ -23,7 +23,7 @@ jobs:
         with:
           tag_name: v1
           name: v1 #Test Release
-          files: *.zip
+          files: kivy-build.zip
           draft: false
           prerelease: false
           generate_release_notes: false 
