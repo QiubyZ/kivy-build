@@ -13,6 +13,7 @@ jobs:
       - name: Zip Repository
         run: zip -r kivy-build.zip . -x .git* .github/workflows/*
 
+
       - name: Hapus Rilis Lama
         uses: dev-drprasad/delete-older-releases@v0.1.0
         with:
