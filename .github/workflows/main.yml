@@ -17,7 +17,9 @@ jobs:
         run: zip -r kivy-build.zip . -x .git* .github/workflows/*
 
       - name: Check 
-        run: ls -l -a 
+        run: |
+            ls -l -a 
+            pwd
 
 
       - name: work space
