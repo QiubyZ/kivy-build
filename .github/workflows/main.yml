@@ -16,6 +16,8 @@ jobs:
       - name: Zip Repository
         run: zip -r kivy-build.zip . -x .git* .github/workflows/*
 
+      - name: Check 
+        run: ls -l -a 
 
       - uses: actions/checkout@v4
       - name: Buat Rilis Baru
