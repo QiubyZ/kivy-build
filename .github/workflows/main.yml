@@ -19,7 +19,8 @@ jobs:
 
       - uses: actions/checkout@v4
       - name: Buat Rilis Baru
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/')
         with:
           tag_name: v1
           name: v1 #Test Release
