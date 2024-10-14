@@ -102,7 +102,8 @@ runs:
     - name: Build with Buildozer
       id: buildozer
       shell: bash
-      run: ${{inputs.buildozer_cmd}}
+      run: |
+        ${{inputs.buildozer_cmd}}
       
     # Upload artifacts
     - name: Upload artifact
