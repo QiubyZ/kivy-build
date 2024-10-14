@@ -29,10 +29,10 @@ jobs:
           prerelease: false
           generate_release_notes: false 
 
-      - name: Hapus Rilis Lama
-        uses: dev-drprasad/delete-older-releases@v0.1.0
-        with:
-          keep_latest: 0 # Hapus semua rilis sebelumnya
-          delete_tags: true # Hapus tag yang terkait dengan rilis
-
+      # - name: Hapus Rilis Lama
+      #   uses: dev-drprasad/delete-older-releases@v0.1.0
+      #   with:
+      #     keep_latest: 0 # Hapus semua rilis sebelumnya
+      #     delete_tags: true # Hapus tag yang terkait dengan rilis
+      #
 
