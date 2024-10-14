@@ -15,12 +15,15 @@ jobs:
 
       - name: Zip Repository
         run: zip -r kivy-build.zip . -x .git* .github/workflows/*
+
+
+      - uses: actions/checkout@v4
       - name: Buat Rilis Baru
         uses: softprops/action-gh-release@v1
         with:
           tag_name: v1
           name: v1 #Test Release
-          files: ./kivy-build.zip
+          files: *.zip
           draft: false
           prerelease: false
           generate_release_notes: false 
