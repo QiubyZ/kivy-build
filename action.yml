@@ -54,7 +54,6 @@ runs:
           pkg-config \
           libncurses5-dev \
           libncursesw5-dev \
-          libtinfo5 \
           cmake \
           libffi-dev \
           libssl-dev \
